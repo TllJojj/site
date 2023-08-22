@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: white;
+        }
+        button {
+            background-color: white;
+            color: blue;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Cuzinho hoje?</h2>
+        <button id="yes">Sim</button>
+        <button id="no">Não</button>
+    </div>
+
+    <script>
+        const noButton = document.querySelector("#no");
+        noButton.addEventListener("mouseover", () => {
+            noButton.style.position = "absolute";
+            noButton.style.top = Math.random() * window.innerHeight + "px";
+            noButton.style.left = Math.random() * window.innerWidth + "px";
+        });
+    </script>
+    <script>const yesButton = document.querySelector("#yes");
+        yesButton.addEventListener("click", () => {
+            window.location.href = "https://wa.me/5564984568248";
+        });
+        </script>
+</body>
+</html>
